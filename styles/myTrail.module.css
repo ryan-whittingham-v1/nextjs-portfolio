@@ -1,0 +1,8 @@
+.trailsText {
+  font-size: calc(35px + 6 * ((100vw - 325px) / 200));
+  will-change: transform, opacity;
+  font-family: system-ui;
+  position: relative;
+  left: -50px;
+  max-height: 100vh;
+}

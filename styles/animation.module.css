@@ -1,0 +1,9 @@
+.transition {
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+}
+
+.gif {
+  width: 50vh;
+}
