@@ -14,7 +14,7 @@ import linkedin from '../public/images/linkedin.png';
 import github from '../public/images/github.png';
 
 const name = 'Ryan Whittingham';
-export const siteTitle = 'Ryan Whittingham';
+const siteTitle = 'Ryan Whittingham';
 
 export default function Home() {
   return (
@@ -34,17 +34,10 @@ export default function Home() {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <title>{siteTitle}</title>
       </Head>
 
       <header className={styles.headerContainer}>
-        <Image
-          priority
-          src={backgroundImage}
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-          className={styles.background}
-        />
         <div className={styles.heading}>
           <Typewriter text={name} />
         </div>
@@ -64,6 +57,7 @@ export default function Home() {
                 layout="fill"
                 objectFit="contain"
                 objectPosition="top"
+                alt="Headshot of male anime character"
               />
             </div>
           </animated.div>
@@ -184,6 +178,7 @@ export default function Home() {
                 layout="responsive"
                 objectFit="contain"
                 objectPosition="center"
+                alt="twitter's blue bird logo"
               />
               <p>@ry_whittingham</p>
             </a>
@@ -198,6 +193,7 @@ export default function Home() {
                 layout="responsive"
                 objectFit="contain"
                 objectPosition="center"
+                alt="linkedin's logo"
               />
               <p>Linkedin</p>
             </a>
@@ -212,6 +208,7 @@ export default function Home() {
                 layout="responsive"
                 objectFit="contain"
                 objectPosition="center"
+                alt="github's octo-cat logo"
               />
               <p>GitHub</p>
             </a>
@@ -220,7 +217,7 @@ export default function Home() {
       </section>
 
       <footer className={styles.footer}>
-        <p>Copyright © 2021 Ryan Whittingham. All Rights Reserved</p>
+        <p>Copyright © 2021 Ryan Whittingham</p>
       </footer>
     </div>
   );
